@@ -1,0 +1,113 @@
+/* Zera as margens e define o padrão da caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o fundo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Centraliza e limita a largura do container principal */
+.profile-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Estiliza o "cartão" do perfil */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Cabeçalho do perfil com a foto/avatar */
+.profile-header .avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #764ba2;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.profile-header p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Corpo do perfil */
+.profile-body {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.profile-body h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.profile-body p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Lista de informações */
+.info-list {
+    list-style: none;
+    font-size: 14px;
+    color: #444;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+}
+
+/* Rodapé com botão */
+.profile-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #764ba2;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #5e3591;
+}
